@@ -5,10 +5,16 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "format.elm": "elm-format . --yes",
     "test.elm": "elm-test",
+    "format": "npm run format.prettier & npm run format.elm",
+    "format.prettier": "prettier --write . --ignore-path .gitignore",
+    "format.elm": "elm-format . --yes",
+    "lint": "npm run lint.eslint & npm run lint.stylelint & npm run lint.elm",
     "lint.elm": "elm-review",
-    "lint.css": "stylelint './src/**/*.css'"
+    "lint.stylelint": "stylelint './src/**/*.css'",
+    "lint.eslint": "eslint . --ignore-path .gitignore",
+    "check": "npm run check.type",
+    "check.type": "tsc --noEmit"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.5.0",
