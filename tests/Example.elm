@@ -2,7 +2,7 @@ module Example exposing (..)
 
 -- Test target modules
 
-import Expect exposing (..)
+import Expect
 import Main exposing (..)
 import Test exposing (..)
 

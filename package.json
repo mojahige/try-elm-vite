@@ -5,12 +5,14 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "format.elm": "npx elm-format . --yes",
-    "test.elm": "npx elm-test"
+    "format.elm": "elm-format . --yes",
+    "test.elm": "elm-test",
+    "lint.elm": "elm-review"
   },
   "devDependencies": {
     "elm": "^0.19.1-5",
     "elm-format": "^0.8.5",
+    "elm-review": "^2.6.1",
     "elm-test": "^0.19.1-revision7",
     "typescript": "^4.3.2",
     "vite": "^2.6.4",
