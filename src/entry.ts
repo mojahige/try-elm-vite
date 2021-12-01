@@ -1,4 +1,4 @@
 import "./style.css";
-import { Elm } from "./elm/Main.elm";
+import { Elm } from "./app/Main.elm";
 
 Elm.Main.init({ node: document.querySelector("#app") });
