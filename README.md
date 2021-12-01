@@ -1,4 +1,4 @@
-# try-elm-vite
+# elm-vite-boilerplate
 
 🎉 [Vite](https://vitejs.dev/) & [Elm](https://elm-lang.org/)
 
