@@ -4,20 +4,9 @@ module.exports = {
     browser: true,
     node: true,
   },
-  overrides: [
-    {
-      files: ["*.js"],
-      extends: ["eslint:recommended", "prettier"],
-    },
-    {
-      files: ["*.ts"],
-      parser: "@typescript-eslint/parser",
-      plugins: ["@typescript-eslint"],
-      extends: [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "prettier",
-      ],
-    },
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
   ],
 };
