@@ -1,12 +1,12 @@
-type MainInitArgs = {
+type InitArgs = {
   node: ReturnType<typeof document.querySelector>;
   flags?: unknown;
 };
 
 declare module "*.elm" {
   export const Elm: {
-    Main: {
-      init: (args: MainInitArgs) => void;
+    [key: string]: {
+      init: (args: InitArgs) => void;
     };
   };
 }
